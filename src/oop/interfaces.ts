@@ -17,7 +17,7 @@ interface Greetable extends Named {
   greet(phrase: string): void;
 }
 
-class Person implements Greetable {
+class PersonOOP implements Greetable {
   name?: string;
 
   constructor(name: string) {
@@ -31,4 +31,4 @@ class Person implements Greetable {
   }
 }
 
-let user1 = new Person('João');
+let user1 = new PersonOOP('João');

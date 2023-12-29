@@ -21,17 +21,17 @@ type Numeric = number | boolean;
 
 type Universal = Combinable1 & Numeric;
 
-function add(a: number, b: number): number;
-function add(a: string, b: string): string;
-function add(a: Combinable1, b: Combinable1) {
+function add1(a: number, b: number): number;
+function add1(a: string, b: string): string;
+function add1(a: Combinable1, b: Combinable1) {
   if (typeof a === 'string' || typeof b === 'string') {
     return a.toString() + b.toString();
   }
   return a + b;
 }
 
-const result = add('João', 'Vitor');
-result.split(' ');
+const result = add1('João', 'Vitor');
+// result.split(' ');
 
 const fetchedUserDate = {
   id: 'u1',
